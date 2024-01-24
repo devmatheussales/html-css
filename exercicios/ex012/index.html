@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Localmente</h1>
+    <p>Vamos aprender a reproduzir vídeos em HTML5</p>
+    <video controls preload="metadata" width="640px" poster="images/limoes-capa.png">
+        <source src="./videos/meu-video.webm" type="video/webm">
+        <source src="./videos/meu-video.mp4" type="video/mp4">
+        <source src="./videos/meu-video.m4v" type="video/m4v">
+        <source src="./videos/meu-video.ogv" type="video/ogv">
+        <p>Seu navegador não consegue reproduzir o vídeo</p><!-- A ordem de cima para baixo é a ordem que o navegador tentará reproduzir os fomartos de vídeo -->
+    </video>
+    <h1>Inserindo Vídeos Externamente</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LIGoD4-Xz5A?si=tWLIBTOYHJ4H8ni_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/278845039?h=db3f60482a&color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/278845039">REEL</a> from <a href="https://vimeo.com/alessandronovelli">Alessandro Novelli - NEWGOLD</a> on <a href="https://vimeo.com">Vimeo</a>. &copy;</p>
+</body>
+</html>

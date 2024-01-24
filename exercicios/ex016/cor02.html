@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações Globais */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to top,#024059 , #04BF8A, #03A64A);
+            background-attachment: fixed;
+        }
+        .teste {
+            background-image: radial-gradient(red, magenta, pink);
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <div class="teste"></div>
+</body>
+</html>
