@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+<!-- 'name' e 'id' serão o mesmo porem o id terá um "i" na frente -->
+    <form autocomplete="off"  method="post" action="cadastro.php"> <!-- action serve para definir pra onde irão os dados -->
+        <!-- métodos
+            GET: método padrão para informações que não sejam sensiveis como: ome, peso.Só pode enviar 3000 bytes(aproximadamente 3000 caracteres)
+            POST método para informações sensisveis tais como senhas, cartão de crédito. Sem limite de tamanho.
+        -->
+        <p><label for="inome">Nome:</label> <!-- em 'label', o 'for' é para o id que ele vai ser 'conectado' -->
+             <input type="text" name="nome" id="inome" autocapitalize="on"></p> <!-- 'name': mais útil para PHP e HTML, 'id' mais útil para JavaScript -->
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <p><input type="submit" value="Enviar"></p> <!-- 'submit' serve para enviar os dados para o caminho onde 'action (que fica dentro de 'form')' definiu -->
+    </form>
+</body>
+</html>
