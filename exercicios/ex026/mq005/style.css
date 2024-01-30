@@ -68,12 +68,14 @@ h2 {
 
 main {
     margin-top: 10px;
+    margin: auto;
+    
 }
 article {
     background-color: white;
-    margin: auto;
     width: 80vw;
     border-radius: 12px;
+    margin: auto;
 }
 
 p {
