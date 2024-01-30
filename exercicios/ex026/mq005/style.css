@@ -24,16 +24,40 @@ header {
     background-color: rgb(139, 134, 134);   
 }
 
-ul > li {
-    display: inline-block;
+span#burger {
+    background-color: rgb(63, 59, 59);
     color: white;
-    background-color: rgb(58, 55, 55);
+    display: block;text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 
-li > a {
+span#burger:hover {
+        background-color: whitesmoke;
+        color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
     color: white;
+    background-color: rgb(58, 55, 55);
+    text-align: center;
+    padding: 10px;
     text-decoration: none;
+    margin: 1px;
+}
+
+
+menu >ul > li > a:hover {
+    background-color: rgb(100, 91, 91);
 }
 
 h2 {
@@ -42,6 +66,9 @@ h2 {
     padding-top: 10px;
 }
 
+main {
+    margin-top: 10px;
+}
 article {
     background-color: white;
     margin: auto;
@@ -51,4 +78,6 @@ article {
 
 p {
     padding: 15px;
+    margin-bottom: 5px;
+    text-indent: 10px;
 }
